@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat Uygulaması</title>
+    <style>
+      .chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-form-container {
+  flex-grow: 1;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <ul id="messages"></ul>
+      <div class="chat-form-container">
+        <form id="form" action="">
+          <input id="username" placeholder="Kullanıcı adı" autocomplete="off" />
+          <input id="input" placeholder="Mesajınızı buraya yazın" autocomplete="off" />
+          <button>Gönder</button>
+        </form>
+      </div>
+    </div>
+    
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
