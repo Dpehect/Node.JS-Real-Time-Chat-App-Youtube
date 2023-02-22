@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 
 // MongoDB bağlantısı
-mongoose.connect('mongodb+srv://Dpehect:deneme123@cluster0.olfqcop.mongodb.net/testchat-app', {
+mongoose.connect('mongodb+srv://username:password@cluster0.olfqcop.mongodb.net/testchat-app', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
